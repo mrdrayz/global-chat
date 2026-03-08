@@ -1,0 +1,173 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url("/LoginRegisterBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 32px;
+  border-radius: 16px;
+  background: rgba(52, 20, 117, 0.15);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(165, 18, 18, 0.12);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 0 80px rgba(100, 60, 200, 0.05);
+}
+
+.title {
+  text-align: center;
+  margin: 0 0 32px;
+  font-weight: 600;
+  font-size: 28px;
+  color: #f0f0f0;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.input {
+  font-size: 16px;
+  width: 100%;
+  padding: 8px 0 10px;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+  color: #f0f0f0;
+  font-family: inherit;
+}
+
+.input:focus {
+  border-bottom-color: #7c3aed;
+}
+
+.label {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  font-size: 17px;
+  color: rgb(6, 209, 245);
+  transition:
+    top 0.3s,
+    font-size 0.3s,
+    color 0.3s;
+  pointer-events: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input:focus ~ .label,
+.inputFilled ~ .label {
+  top: -20px;
+  font-size: 13px;
+  color: rgba(224, 224, 224, 0.7);
+}
+
+.button {
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.8),
+    rgba(59, 130, 246, 0.8)
+  );
+  outline: none;
+  cursor: pointer;
+  transition:
+    opacity 0.3s,
+    transform 0.2s;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(4px);
+}
+
+.button:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.9),
+    rgba(59, 130, 246, 0.9)
+  );
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error {
+  color: #f87171;
+  text-align: center;
+  margin: 0 0 40px;
+  font-size: 14px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.success {
+  color: #34d399;
+  text-align: center;
+  margin: 0 0 40px;
+  font-size: 14px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.link {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(224, 224, 224, 0.65);
+  margin-top: 24px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.link a {
+  color: #06b6d4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link a:hover {
+  color: #22d3ee;
+}
+
+.charCounter {
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  font-size: 11px;
+  color: rgba(1, 225, 245, 0.971);
+  transition: color 0.3s;
+}
+
+.charCounterWarning {
+  color: #facc15;
+}
+
+.charCounterDanger {
+  color: #f87171;
+}
