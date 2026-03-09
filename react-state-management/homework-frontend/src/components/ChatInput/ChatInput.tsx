@@ -1,4 +1,5 @@
-import { type FormEvent, useState } from "react";
+import { type FormEvent, useState, useCallback } from "react";
+import EmojiPicker from "../EmojiPicker/EmojiPicker";
 import styles from "./ChatInput.module.css";
 
 interface ChatInputProps {
@@ -30,6 +31,13 @@ function ChatInput({
     setText(event.target.value);
   };
 
+  const handleEmojiSelect = useCallback((emoji: string): void => {
+    setText((prev) => {
+      const newText = prev + emoji;
+      return newText.length <= MAX_MESSAGE_LENGTH ? newText : prev;
+    });
+  }, []);
+
   const getCounterClass = (): string => {
     if (text.length > DANGER_THRESHOLD) {
       return `${styles.counter} ${styles.counterDanger}`;
@@ -56,6 +64,7 @@ function ChatInput({
           {text.length}/{MAX_MESSAGE_LENGTH}
         </span>
       </div>
+      <EmojiPicker onSelectEmoji={handleEmojiSelect} />
       <button
         className={styles.button}
         type="submit"
