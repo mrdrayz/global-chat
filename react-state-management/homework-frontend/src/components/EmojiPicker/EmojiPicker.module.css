@@ -21,6 +21,8 @@
 .trigger:hover {
   border-color: rgba(124, 58, 237, 0.5);
   background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
 .panel {
@@ -116,4 +118,6 @@
 .emojiButton:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: scale(1.15);
+  transform: translateY(-3px);
+  opacity: 0.9;
 }
