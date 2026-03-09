@@ -153,17 +153,17 @@ npm test
 
 ### Регистрация провалена
 
-<img width="1521" height="942" alt="image" src="https://github.com/mrdrayz/global-chat-t-bank-frontend-course/blob/main/react-state-management/demo-images/registration-unsuccessful.png" />
+<img width="1521" height="942" alt="image" src="https://github.com/mrdrayz/global-chat/blob/main/react-state-management/demo-images/registration-unsuccessful.png" />
 
 ### Регистрация прошла успешно
 
-<img width="1521" height="942" alt="image" src="https://github.com/mrdrayz/global-chat-t-bank-frontend-course/blob/main/react-state-management/demo-images/registration-successful.png" />
+<img width="1521" height="942" alt="image" src="https://github.com/mrdrayz/global-chat/blob/main/react-state-management/demo-images/registration-successful.png" />
 
 
 ### Попытка входа провалена
 
-<img width="1521" height="942" alt="image" src="https://github.com/mrdrayz/global-chat-t-bank-frontend-course/blob/main/react-state-management/demo-images/unsuccessful-authentication.png" />
+<img width="1521" height="942" alt="image" src="https://github.com/mrdrayz/global-chat/blob/main/react-state-management/demo-images/unsuccessful-authentication.png" />
 
 ### Страница глобального чата
 
-<img width="1521" height="942" alt="image" src="https://github.com/mrdrayz/global-chat-t-bank-frontend-course/blob/main/react-state-management/demo-images/chat-page.png" />
+<img width="1521" height="942" alt="image" src="https://github.com/mrdrayz/global-chat/blob/main/react-state-management/demo-images/chat-page.png" />
